@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Event Registration Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Event Registration Portal</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="events.html">Events</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="register.html">Register</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<section class="register-section">
+
+    <h2>Event Registration Form</h2>
+
+    <form id="registrationForm" action="register.php" method="POST">
+
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Full Name"
+            required
+        >
+
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+            required
+        >
+
+        <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Phone Number"
+            required
+        >
+
+        <input
+            type="text"
+            id="college"
+            name="college"
+            placeholder="College Name"
+            required
+        >
+
+        <input
+            type="text"
+            id="department"
+            name="department"
+            placeholder="Department"
+            required
+        >
+
+        <select id="event" name="event" required>
+            <option value="">Select Event</option>
+            <option value="Hackathon">Hackathon</option>
+            <option value="Workshop">Workshop</option>
+            <option value="Cultural Fest">Cultural Fest</option>
+        </select>
+
+        <button type="submit">Submit Registration</button>
+
+    </form>
+
+    <p id="successMessage"></p>
+
+</section>
+
+<footer>
+    <p>&copy; 2026 Event Registration Portal</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
